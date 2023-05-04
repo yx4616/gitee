@@ -1,0 +1,11 @@
+server:
+  port: 2500
+eureka:
+  instance:
+    prefer-ip-address: true #显示服务ip地址
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #服务注册中心的路径
+spring:
+  application:
+    name: eureka-client-user #设置应用名称

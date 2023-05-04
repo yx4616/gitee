@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: microservice-config-client
+  cloud:
+    config:
+      profile: prod # ??????{profile}
+      uri: http://localhost:8888/  # ???????
+      label: main
+server:
+  port: 8801
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
